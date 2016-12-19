@@ -1,0 +1,14 @@
+{
+  "name": "react-gallery",
+  "version": "1.0.0",
+  "description": "Test task",
+  "main": "index.html",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Pavel Kostin",
+  "license": "MIT",
+  "devDependencies": {
+    "express": "^4.14.0"
+  }
+}

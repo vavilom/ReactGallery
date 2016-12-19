@@ -1,0 +1,157 @@
+﻿body{
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+
+.clearfix::after{
+    clear: both;
+    display: block;
+    content: '';
+}
+
+.line{
+    background: -moz-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(0,109,172,0.65) 50%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,109,172,0.65) 50%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(0,109,172,0.65) 50%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+    height: 2px;
+    margin: 10px;
+}
+
+header{
+    background-color: #229ce2;
+    padding: 20px;
+    font-family: 'Dancing Script', cursive;
+}
+
+section{
+    margin: 30px 0;
+}
+
+header h1{
+    color: #f6f2f2;
+    font-size: 50px;
+    margin: 0;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.buttonGroup{
+    margin-top: 20px;
+}
+
+.box{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.imgBox{
+    min-width: 140px;
+    margin: 10px 10px;
+    display:inline-block;
+}
+
+.imgBox img{
+    -webkit-box-shadow: 4px 4px 20px 0px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow:    4px 4px 20px 0px rgba(50, 50, 50, 0.5);
+    box-shadow:         4px 4px 20px 0px rgba(50, 50, 50, 0.5);
+}
+
+.imgContainer {
+    text-align: center;
+}
+
+button {
+    margin: 5px;
+    padding: 4px 12px;
+    min-width: 60px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: white;
+    color: #229ce2;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/* Modal */
+
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 500;
+	-webkit-transition: opacity 300ms ease-in;
+	-moz-transition: opacity 300ms ease-in;
+	transition: opacity 300ms ease-in;
+}
+
+.modalDialog > div {
+	width: 60%;
+	position: relative;
+	margin: 2% auto;
+	padding: 10px;
+	border-radius: 10px;
+	background: #fff;
+    z-index: 1000;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+}
+
+.modalImg{
+    width: 100%;
+}
+
+.closeModal{
+    position: absolute;
+	right: -10px;
+	top: -10px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 21px;
+    -webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+    background-color: #999;
+}
+
+.closeModal:hover { 
+    background: #229ce2;
+    cursor: pointer; 
+    color: white;
+}
+
+/* Animation */
+
+.modal-anim-enter {
+    opacity: 0.00;
+    transform: scale(0.7);
+    transition: all 0.2s;
+}
+
+.modal-anim-enter.modal-anim-enter-active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.modal-anim-leave {
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.2s;
+}
+
+.modal-anim-leave.modal-anim-leave-active {
+    opacity: 0.00;
+    transform: scale(0.7);
+}
